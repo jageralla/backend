@@ -31,8 +31,6 @@ SECRET_KEY = 'django-insecure-v&vs-_&($)(u^s2n33@uyw5o(0g+tw&dahg2%bfpdeqd2t@p8$
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"] #allow all host
-CSRF_TRUSTED_ORIGINS = ["https://backend-production-8c91.up.railway.app/", 'https://127.0.0.1']
-SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-originin-allow-popups"
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
