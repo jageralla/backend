@@ -42,7 +42,7 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=1),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
 
@@ -99,8 +99,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'todo_db_wot6',
+        'USER': 'todo_db_wot6_user',
+        'PASSWORD': '2bmaMxbzhXU9ukBUVI9zZ6WYcLktx7fX',
+        'HOST': 'dpg-cp6bugun7f5s73abehc0-a',  # Set to empty string for localhost.
+        'PORT': '5432',       # Set to empty string for default.
     }
 }
 
