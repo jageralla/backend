@@ -103,7 +103,7 @@ DATABASES = {
         'NAME': 'todo_db_wot6',
         'USER': 'todo_db_wot6_user',
         'PASSWORD': '2bmaMxbzhXU9ukBUVI9zZ6WYcLktx7fX',
-        'HOST': 'dpg-cp6bugun7f5s73abehc0-a.oregon-postgres.render.com',  # Set to empty string for localhost.
+        'HOST': 'dpg-cp6bugun7f5s73abehc0-a',  # Set to empty string for localhost.
         'PORT': '5432',       # Set to empty string for default.
     }
 }

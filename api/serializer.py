@@ -25,7 +25,7 @@ class CustomUserSerializer(serializers.ModelSerializer):
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
-        fields = ["id", "task", "due_date", "created_at", "is_completed", "author"]
+        fields = ["id", "task", "created_at", "is_completed", "author"]
         extra_kwargs = {"author":{"read_only": True}}
 
 class TodoCompletionSerializer(serializers.ModelSerializer):
