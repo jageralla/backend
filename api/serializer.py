@@ -1,11 +1,9 @@
 
 from .models import Todo, CustomUser
 from rest_framework import serializers
-from django.core.mail import send_mail
 from django.conf import settings
 import uuid
-from rest_framework import serializers
-from django.utils.crypto import get_random_string
+from django.core.mail import send_mail
 
 
 class CustomUserSerializer(serializers.ModelSerializer):
@@ -33,12 +31,6 @@ class TodoCompletionSerializer(serializers.ModelSerializer):
         model = Todo
         fields = ['is_completed']
         
-        
-from rest_framework import serializers
-from django.contrib.auth.models import User
-from django.core.mail import send_mail
-from django.conf import settings
-from django.utils.crypto import get_random_string
 
 class PasswordResetSerializer(serializers.Serializer):
     email = serializers.EmailField()
