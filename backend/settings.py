@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-v&vs-_&($)(u^s2n33@uyw5o(0g+tw&dahg2%bfpdeqd2t@p8$'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -100,10 +100,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo_db_wot6',
-        'USER': 'todo_db_wot6_user',
-        'PASSWORD': '2bmaMxbzhXU9ukBUVI9zZ6WYcLktx7fX',
-        'HOST': 'dpg-cp6bugun7f5s73abehc0-a',  # Set to empty string for localhost.
+        'NAME': os.getenv('DATABASE_NAME'),
+        'USER': os.getenv('DATABASE_USER'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'HOST': os.getenv('DATABASE_HOST'),  # Set to empty string for localhost.
         'PORT': '5432',       # Set to empty string for default.
     }
 }
@@ -158,7 +158,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'noreply.todoquest@gmail.com'
-EMAIL_HOST_PASSWORD = 'eifo lsoh akol jdkw'
-DEFAULT_FROM_EMAIL = 'noreply.todoquest@gmail.com'
-FRONTEND_URL = 'https://todoquest-three.vercel.app'
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
+FRONTEND_URL = os.getenv('FRONTEND_URL')
