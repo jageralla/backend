@@ -104,7 +104,7 @@ DATABASES = {
         'USER': os.getenv('DATABASE_USER'),
         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
         'HOST': os.getenv('DATABASE_HOST'),  # Set to empty string for localhost.
-        'PORT': '5432',       # Set to empty string for default.
+        'PORT': os.getenv('PORT'),       # Set to empty string for default.
     }
 }
 
