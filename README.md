@@ -12,7 +12,7 @@ TodoEase is a sleek and intuitive web application designed to help users manage 
 - **Frontend**: ReactJS, CSS
 - **Backend**: Python, Django Rest Framework
 - **Database**: Postgresql
-- **Hosting**: Vercel for Frontend, Render for Backend(Docker)
+- **Hosting**: Vercel for Frontend, Render for Backend, Aiven for Postgresql Database
 
 ### Prerequisites
 - Python 3.12
