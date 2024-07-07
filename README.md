@@ -14,12 +14,7 @@ TodoEase is a sleek and intuitive web application designed to help users manage 
 - **Database**: Postgresql
 - **Hosting**: Vercel for Frontend, Render for Backend(Docker)
 
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
 ### Prerequisites
-
 - Python 3.12
 - Node.js 20.9
 - Postgresql
